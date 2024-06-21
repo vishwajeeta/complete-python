@@ -34,5 +34,11 @@ a={3,9,7,5,2}
 b={3,4,7,1,2}
 print(b.union(a))
 
-#intersection --get common value
+#intersection --get common values
 print(b.intersection(a))
+
+#difference --get non-common values
+print(b.difference(a))
+
+sample={1,3,4,"hii"}
+print(sample)
