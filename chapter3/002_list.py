@@ -18,3 +18,5 @@ print(omg)
 # pop
 # insert
 # remove
+# sort
+# reverse
