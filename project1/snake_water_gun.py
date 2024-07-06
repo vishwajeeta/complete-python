@@ -6,6 +6,7 @@ snake water gun game
 0=gun
 '''
 computer=random.choice([-1,1,0])
+
 youstr =input("Enter your choice:")
 youDict={"s":1,"w":-1,"g":0}
 reverseDict={1:"snake",-1:"water",0:"Gun"}
