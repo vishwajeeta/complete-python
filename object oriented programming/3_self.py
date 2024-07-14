@@ -1,7 +1,14 @@
 class Employee:
-    language="python"
-    salary =1200000
+    language = "python" # This is a class attribute
+    salary = 1200000
 
-harry =Employee()
-harry.language="javascript"
-print(harry.language,harry.salary)
+    def getInfo(self):
+        print(f"The language is {self.language}. The salary is {self.salary}")
+
+
+harry = Employee()
+harry.language = "javascript" # This is an instance attribute
+
+# Employee.getInfo(harry)
+# or 
+harry.getInfo()
