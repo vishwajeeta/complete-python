@@ -1,13 +1,26 @@
 import time
+import pyttsx3
 
 now=time.strftime("%H")
 now=int(now)
-now=24
+
 if(now <12 and now >1):
-    print("good morning boss")
+    wish="good morning boss"
+    print(wish)
+
 elif(now >=12 and now <18):
-    print("good afternoon boss")
+    wish="good afternoon boss"
+    print(wish)
+
 elif(now >=18 and now <=23):
-    print("good night boss")
+    wish="good night boss"
+    print(wish)
+
 else:
-    print("good day boss")
+    wish="good day boss"
+    print(wish)
+
+engine=pyttsx3.init()
+
+engine.say(wish)
+engine.runAndWait()
